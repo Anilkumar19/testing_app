@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TestingApp</title>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+					  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="http://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css">
+  
+</head>
+<body>
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+        <% unless current_user.nil? %>
+        <div style="float:right"><%= link_to "Logout", destroy_user_session_path, method: :delete %></div><br /><br/>
+      <% end %>
+
+
+<%= yield %>
+</body>
+</html>

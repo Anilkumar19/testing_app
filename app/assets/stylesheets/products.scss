@@ -1,0 +1,22 @@
+// Place all the styles related to the products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+div.dataTables_paginate span.paginate_button {
+background-color:#DDDDDD;
+}
+div.dataTables_paginate span.paginate_button, .example_alt_pagination div.dataTables_paginate span.paginate_active {
+-moz-border-radius-bottomleft:5px;
+-moz-border-radius-bottomright:5px;
+-moz-border-radius-topleft:5px;
+-moz-border-radius-topright:5px;
+border:1px solid #AAAAAA;
+cursor:pointer;
+margin:0 3px;
+padding:2px 5px;
+}
+.dataTables_paginate {
+line-height:22px;
+}
+.dataTables_paginate {
+text-align:left;
+}
